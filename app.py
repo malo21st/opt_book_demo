@@ -17,7 +17,7 @@ with st.sidebar:
     if students_file is not None:
         students_df = pd.read_csv(students_file)
 
-    cars_file = st.file_uploader("車データ", type={"csv", "txt"})
+    cars_file = st.file_uploader("車データ：", type={"csv", "txt"})
     if cars_file is not None:
         cars_df = pd.read_csv(cars_file)
 
